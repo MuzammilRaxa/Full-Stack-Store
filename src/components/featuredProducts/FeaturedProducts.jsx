@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "../Card/Card";
 import "./FeaturedProducts.scss";
 import useFetch from "../../hooks/useFetch";
+import Card from "../card/card";
 
 const FeaturedProducts = ({ type }) => {
   const { data, loading, error } = useFetch(

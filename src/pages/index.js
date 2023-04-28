@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/ficon.png" />
       </Head>
       <main className={styles.main}>
-<HomeMain/>
+       <HomeMain/>
       </main>
     </>
   )

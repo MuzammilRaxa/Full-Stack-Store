@@ -1,11 +1,12 @@
+import Link from "next/link";
 import React from "react";
-import "./Card.scss";
-import { Link } from "react-router-dom";
+import "./card.scss";
+// import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
   console.log(item);
   return (
-    <Link className="link" to={`/product/${item.id}`}>
+    <Link className="link" href={`/product/${item.id}`}>
       <div className="card">
         <div className="image">
           {item?.attributes.isNew && <span>New Season</span>}
