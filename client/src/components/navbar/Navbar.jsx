@@ -19,11 +19,11 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="left">
           <div className="item">
-            <img src="/img/en.png" alt="" />
+            <img src="/pk1.png" alt="" />
             <KeyboardArrowDownIcon />
           </div>
           <div className="item">
-            <span>USD</span>
+            <span>PKR</span>
             <KeyboardArrowDownIcon />
           </div>
           <div className="item">
@@ -58,7 +58,7 @@ const Navbar = () => {
             <FavoriteBorderOutlinedIcon/>
             <div className="cartIcon" onClick={()=>setOpen(!open)}>
               <ShoppingCartOutlinedIcon/>
-              <span>item</span>
+              <span>0</span>
             </div>
           </div>
         </div>
