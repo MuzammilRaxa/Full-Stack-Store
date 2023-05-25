@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 import "./slider.scss";
+import Navbar from "../navbar/Navbar";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -21,6 +22,7 @@ const Slider = () => {
 
   return (
     <div className="slider">
+      <Navbar/>
       <div className="container" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
         <img src={data[0]} alt="" />
         <img src={data[1]} alt="" />
