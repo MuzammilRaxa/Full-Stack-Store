@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 import Link from "next/link";
 
 const Navbar = () => {
-  const [open,setOpen] = useState(false)
+  const [open, setOpen] = useState(false)
   // const products = useSelector((state) => state.cart.products);
 
   return (
@@ -26,44 +26,46 @@ const Navbar = () => {
             <span>PKR</span>
             <KeyboardArrowDownIcon />
           </div>
-          <div className="item">
-            <Link className ="link" href="/products/1">Women</Link>
-          </div>
-          <div className="item">
-            <Link className ="link" href="/products/2">Men</Link>
-          </div>
-          <div className="item">
-            <Link className ="link" href="/products/3">Children</Link>
-          </div>
-        </div>
-        <div className="center">
-          <Link className ="link" href="/">E-STORE</Link>
-        </div>
-        <div className="right">
-          <div className="item">
-            <Link className ="link" href="/">Homepage</Link>
-          </div>
-          <div className="item">
-            <Link className ="link" href="/">About</Link>
-          </div>
-          <div className="item">
-            <Link className ="link" href="/">Contact</Link>
-          </div>
-          <div className="item">
-            <Link className ="link" href="/">Stores</Link>
-          </div>
-          <div className="icons">
-            <SearchIcon/>
-            <PersonOutlineOutlinedIcon/>
-            <FavoriteBorderOutlinedIcon/>
-            <div className="cartIcon" onClick={()=>setOpen(!open)}>
-              <ShoppingCartOutlinedIcon/>
-              <span>0</span>
+          <div className="catItem">
+            <div className="item">
+              <Link className="link" href="/products/1">Women</Link>
+            </div>
+            <div className="item">
+              <Link className="link" href="/products/2">Men</Link>
+            </div>
+            <div className="item">
+              <Link className="link" href="/products/3">Children</Link>
             </div>
           </div>
         </div>
+        <div className="center">
+          <Link className="link" href="/">E-STORE</Link>
+        </div>
+        <div className="right">
+          <div className="item">
+            <Link className="link" href="/">Homepage</Link>
+          </div>
+          <div className="item">
+            <Link className="link" href="/">About</Link>
+          </div>
+          <div className="item">
+            <Link className="link" href="/">Contact</Link>
+          </div>
+          <div className="item">
+            <Link className="link" href="/">Stores</Link>
+          </div>
+        <div className="iconSec">
+          {/* <SearchIcon />
+          <PersonOutlineOutlinedIcon />
+          <FavoriteBorderOutlinedIcon /> */}
+          <div className="cartIcon" onClick={() => setOpen(!open)}>
+            <ShoppingCartOutlinedIcon />
+            <span>0</span>
+          </div>
+        </div>
+        </div>
       </div>
-      {open && <Cart/>}
+      {open && <Cart />}
     </div>
   );
 };

@@ -8,7 +8,6 @@ import Navbar from '@/components/navbar/Navbar'
 const HomeMain = () => {
   return (
     <div className='home'>
-      <Navbar/>
       <Slider/>
       <FeaturedProducts type="featured"/>
       <Categories/>

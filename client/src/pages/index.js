@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Welcome to E-Store</title>
         <meta name="E-commerce Project" content="This is build with the out standing technologies" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/ficon.png" />
